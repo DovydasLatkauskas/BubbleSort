@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Main{
     public static void main(String[] args){
-        bubbleSort(new int[]{3, 2, 1});
+        bubbleSort(new int[]{2, 3, 1, 2, 4, 5, 1}); // input the desired array to test
     }
 
     public static void bubbleSort(int[] arr) {
