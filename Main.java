@@ -6,14 +6,22 @@ public class Main{
     }
 
     public static void bubbleSort(int[] arr) {
-        while (!arr.sorted()) {
-            
-        }
-
+        int temp;
         System.out.println(Arrays.toString(arr));
-        // Complete code here
+        while (!isSorted(arr)) { // repeats until the input array is sorted
+            for (int i = 0; i < arr.length - 1; i++) {
+                if(arr[i] > arr[i+1]){
+                    temp = arr[i+1];
+                    arr[i+1] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+            System.out.println(Arrays.toString(arr));
+        }
     }
-    public static boolean sorted(int[] arr){
+
+    // method to check if the array is sorted
+    public static boolean isSorted(int[] arr){
         boolean output = true;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i+1]) {
