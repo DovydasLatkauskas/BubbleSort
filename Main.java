@@ -21,7 +21,7 @@ public class Main{
     }
 
     // method to check if the array is sorted
-    public static boolean isSorted(int[] arr){
+    private static boolean isSorted(int[] arr){
         boolean output = true;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i+1]) {
