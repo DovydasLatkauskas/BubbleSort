@@ -5,7 +5,7 @@ public class Main{
         bubbleSort(new int[]{2, 3, 1, 2, 4, 5, 1}); // input the desired array to test
     }
 
-    public static void bubbleSort(int[] arr) {
+    public static void bubbleSort(int[] arr) { // the bubble sort method
         int temp;
         System.out.println(Arrays.toString(arr));
         while (!isSorted(arr)) { // repeats until the input array is sorted
